@@ -1,0 +1,176 @@
+/* ===========================
+   Estilos generales
+=========================== */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #5a7da1 0%, #05192e 100%);
+    color: #f8fafc;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ===========================
+   Encabezado
+=========================== */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+header p {
+    color: #dbeafe;
+    font-size: 15px;
+}
+
+/* ===========================
+   Contenedor principal
+=========================== */
+main {
+    width: 100%;
+    max-width: 900px;
+}
+
+/* ===========================
+   Buscador
+=========================== */
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 280px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #156e80;
+    background: #166561;
+    color: white;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #d1fae5;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #4acfde;
+    color: #083344;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #6b8eae;
+    transform: scale(1.05);
+}
+
+/* ===========================
+   Tarjeta de información
+=========================== */
+.weather-card {
+    background: rgba(132, 147, 215, 0.95);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #7f8fc9;
+    box-shadow: 0 10px 25px rgba(0,0,0,.35);
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.weather-card h2,
+.weather-card h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.description {
+    background: rgba(0,0,0,.25);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.geo-data {
+    color: #d1fae5;
+    margin-top: 10px;
+}
+
+.weather-data {
+    margin-top: 15px;
+}
+
+.weather-data h4 {
+    color: #d1fae5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.weather-data p {
+    margin: 8px 0;
+}
+
+.success-footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #d1fae5;
+    font-weight: bold;
+}
+
+/* ===========================
+   Mapa
+=========================== */
+#map {
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid #4acfde;
+    box-shadow: 0 10px 25px rgba(0,0,0,.4);
+    margin-top: 20px;
+}
+
+/* ===========================
+   Línea divisoria
+=========================== */
+hr {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,.3);
+    margin: 20px 0;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 768px) {
+
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input,
+    button {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    #map {
+        height: 350px;
+    }
+}
